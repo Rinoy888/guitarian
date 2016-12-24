@@ -1,0 +1,210 @@
+@import "../../base/variables";
+@import "../../functions/baseFunctions";
+
+.postform{
+  background:#fff;
+  color: #333333;
+}
+.heading > span{
+  line-height: 30px;
+  font-size: 90%;
+  font-weight: lighter;
+  text-align: center;
+  color:#333;
+  border-bottom:2px transparent solid;
+}
+.postform .cont,.postform .cont form > .head,.postform .cont form > .mid,.postform .cont form > .foot{
+  /*background:rgba($blueR,$blueG,$blueB,0.02);shikku*/
+}
+.postform > .cont {
+  /*background:rgba($blueR,$blueG,$blueB,0.02);shikku*/
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);/*shikku*/
+}
+.postform .cont form > .head textarea{
+  border:none;
+  outline: none;
+  resize: vertical;
+  /*background:rgba($blueR,$blueG,$blueB,0.02);*/
+}
+.postform .cont form > .head input{
+  resize: none;
+}
+.postform .cont form > .head input,
+.postform .cont form > .head input[type="checkbox"]{
+  border:#ddd 1px solid;
+  outline: none;
+}
+.p-dropzone{
+  border: 1px dashed #aaa;
+  color:#888;
+  line-height: 30px;
+}
+.postform .cont form > .foot{
+  width: 100%;
+  /*background:rgba($blueR,$blueG,$blueB,0.2);
+  background: $lightSlateGray;shikku*/
+  border-top: 1px solid rgba(0, 0, 0, 0.15);/*shikku*/
+  height:30px;
+}
+.postform .cont form > .foot > .Sel {/*shikku*/
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+.postform .cont form > .foot > button{
+  font-size: 80%;
+  border: none;
+  background: #3ba75b;
+  color:#eee;
+  @include border-radius(4px);
+}
+.postform .cont form > .foot > div{
+  font-size: 80%;
+  line-height: 25px;
+  /*background: rgba($blueR,$blueG,$blueB,0.3);shikku*/
+  color:$defFont;/*shikku*/
+}
+.postform .cont form > .foot > div .text-slot{
+  text-align: center;
+  line-height: 30px;
+  color:#444;
+}
+.postform .cont form > .foot > div > .foot{
+}
+.postform .cont form > .foot > div > .foot > span{
+  background: #fff;
+}
+
+.postform .cont form > .head .half{
+  line-height: 30px;
+}
+.postform .cont form > .head .half > div > select{
+  border:#ddd 1px solid;
+  background:#fff;
+}
+
+.feed-slot{
+  border-top:#eee solid 1px;
+}
+.feed-slot > .feedSet{
+  border-bottom:#ddd 1px solid;
+}
+
+.feed-slot > .feedSet .contHead > div {
+  border-bottom: 1px solid #f4f4f4;
+  color:#444;
+}
+.feed-slot > .feedSet .cont> .left{
+}
+.feed-slot > .feedSet .cont> .left > .img{
+  background:#aaa;
+}
+.feed-slot > .feedSet .cont> .right {
+  font-size:90%;
+  color:#333;
+}
+.feed-slot > .feedSet .cont> .right > .head{
+  line-height:30px;
+  color:#666;
+}
+.feed-slot > .feedSet .cont> .right > .head,
+.feed-slot > .feedSet .cont> .right > .mid,
+.feed-slot > .feedSet .cont> .right > .foot
+{
+  transition: 1s;
+}
+.feed-slot > .feedSet .cont> .right > .mid
+{
+  background:#fff;
+}
+.feed-slot > .feedSet .cont> .right > .foot > .head .cnmtBtn,
+.feed-slot > .feedSet .cont> .right > .foot > .head .date
+{
+  line-height: 30px;
+}
+.feed-slot > .feedSet .cont> .right > .foot > .head .cnmtBtn {
+  color:#1B98C2;
+}
+.feed-slot > .feedSet .cont> .right > .foot > .head .date {
+  color:#aaa;
+}
+.b-btn-def,
+.b-btn-sm{
+  font-size: 80%;
+  border: none;
+  background: #3ba75b;
+  color:#eee;
+  border-radius: 4px;
+}
+.b-btn-def{
+  background:#eee;
+}
+.commentSet {
+  border-bottom: 1px solid #ddd;
+  color: #777;
+  font-weight:strong;
+}
+.commentSet > .contSec > div  {
+  line-height: 30px;
+}
+.commentSet > .imgSec > .img  {
+  background: #ddd;
+}
+.commentSet > div > .foot > div > .date{
+  line-height: 20px;
+}
+.commentSet > div > .head {
+  font-size: 110%;
+  color: #444;
+}
+.commentSet > div > .head ,
+.commentSet > div > .mid {
+  line-height: 20px;
+}
+.commentForm{
+  transition: .8s;
+}
+.b-link{
+  color:#1B98C2;
+  line-height:20px;
+}
+.form-error-msg {
+  padding: 4px;
+  background: #FF4500;
+  border-radius: 1px;
+  margin: 5px 0 0 5px;
+  font-size: 11px;
+  float:left;
+}
+.comment-slot {
+  background:#eee;
+}
+.selPerson > .head {
+  font-size: 11px;
+}
+.selPerson {
+  ._720kb-datepicker-calendar {
+    margin: 5px auto 0 -.5%;
+    position: relative;
+    visibility: visible;
+  }
+  input[type='text'] {
+    font-family:Helvetica;
+    min-height:25px;
+    line-height:25px;
+    width: 125px;
+  }
+}
+._720kb-datepicker-calendar > div {
+  font: 11px Helvetica;
+}
+._720kb-datepicker-calendar > ._720kb-datepicker-calendar-header {
+  padding: 7px 1%;
+}
+._720kb-datepicker-calendar > ._720kb-datepicker-calendar-header-left,
+._720kb-datepicker-calendar > ._720kb-datepicker-calendar-header-right {
+  color: rgba(0,0,0,.4);
+}
+._720kb-datepicker-calendar > ._720kb-datepicker-calendar-body > ._720kb-datepicker-calendar-day {
+  margin: 3px 1%;
+}

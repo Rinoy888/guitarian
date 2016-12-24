@@ -1,0 +1,30 @@
+@import "../../functions/baseFunctions";
+.popBox{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.1);
+  @include shadow(0,0,7px,rgba(0,0,0,0.3));
+  opacity:1;
+  transition: .5s;
+  z-index:151;
+  .topArrow{
+    transform:rotate(45deg);
+    background: #fff;
+    @include shadow(0,0,7px,rgba(0,0,0,0.3));
+    z-index:30;
+  }
+  .cont{
+    padding:10px;
+    background:#fff;
+    z-index:33;
+  }
+  .closeBtn{
+    border-radius: 50%;
+    background: #ccc;
+    font-size: 80%;
+    z-index: 3;
+    color:#ccc;
+  }
+}
+.popBox.show{
+  transition: .5s;
+}

@@ -1,0 +1,15 @@
+@import "../base/variables";
+@import "../functions/baseFunctions";
+.fluidGrid{
+  border-radius: 2px;
+  @include shadow(0,0,4px,#ddd);
+  background:#fff;
+}
+.asphalt{background:$asphalt }
+.yellow{background:$yellow }
+.greenBlue{background:$greenBlue }
+.green{background:$green }
+.red{background:$red }
+.blue{background:$blue }
+.orange{background:$orange }
+.grey{background:$grey }

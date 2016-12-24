@@ -1,0 +1,77 @@
+@import "../../functions/baseFunctions";
+.popBox{
+  display: block;
+  float: left;
+  position: absolute;
+  top:40px;
+  min-height: 50px;
+  min-width: 50px;
+
+  .topArrow{
+    display: block;
+    float: left;
+    position: absolute;
+    top:-6px;
+    width:15px;
+    height:15px;
+  }
+  .cont{
+    display: block;
+    float: left;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+  }
+  .closeBtn{
+    display: block;
+    float: left;
+    position: absolute;
+    top:2px;
+    right:2px;
+    width:7px;
+    height:8px;
+  } 
+  .nestBtn{
+    display:block;
+    float:left;
+    width:calc(100% - 20px);
+    margin:0 10px; 
+    color:#444;
+    height:25px;
+    line-height:25px;
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    padding-left:5px;
+  }
+  .nestBtn:hover{ 
+    cursor:pointer;
+    border-bottom:1px solid $themeColor;
+    color:$themeColor;
+  }
+}
+.popBox.show{
+    width:300px;
+    min-height:0px;
+    max-height:0px; 
+    overflow:hidden;
+    opacity:0px;
+  }
+.popBox.-l{  right:0px; .topArrow{ right:10px; }}
+.popBox.-l-20{  right:0px; .topArrow{ right:20px; }}
+.popBox.-l-30{  right:0px; .topArrow{ right:30px; }}
+.popBox.-l-40{  right:0px; .topArrow{ right:40px; }}
+.popBox.-l-50{  right:0px; .topArrow{ right:50px; }}
+
+.popBox.-r{  left:0px; .topArrow{ left:10px; }}
+.popBox.-r-10{  left:10px; .topArrow{ left:10px; }}
+
+.popBox.-h{  left:50px; top:-70px; .topArrow{ left:-5px; top:75px; }}
+
+.popBox.-t-20{  top:20px; }
+.popBox.-t-30{  top:30px; }
+.popBox.-t-40{  top:40px; }
+.popBox.-t-50{  top:50px; }
+.popBox.-t-60{  top:60px; }
+.popBox.-free{
+  max-width:1000px;
+  max-height:1000px;
+}

@@ -1,0 +1,39 @@
+@import "../../functions/baseFunctions";
+@import "../../base/variables";
+.custButton{
+  display: block;
+  float: left;
+  background:#ddd;
+  margin: 5px;
+  padding:7px 10px;
+  @include border-radius(3px);
+  font-size: 90%;
+  color: #fff;  
+}
+.custButton.-blue{  background: $blue;  color: #eee;  } 
+.custButton.-green{  background: #2ecc71;  color: #eee;  } 
+.custButton.-theme{  background: $themeColor;  color: #eee;  } 
+.custButton.-red{  background: #c0392b;  color: #eee;  } 
+.custButton.-grey{  background: #5b5b5b;  color: #eee;  } 
+.custButton.-right{
+  float: right;
+}
+.custButtonPop{
+	display:block;
+	float:left;
+	position:relative;
+	margin:5px;
+	.custButton{
+		margin:0px;
+	}
+	.popBox{
+		top:100%;
+		left:0px;
+		right:0xp;
+		width:100%;
+		min-height:0px;
+		max-height:200px;
+		overflow:scroll;
+		padding:0;
+	} 
+}
